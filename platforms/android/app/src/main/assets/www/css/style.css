@@ -1,0 +1,346 @@
+*{
+  font-family: 'PT Sans', sans-serif;
+}
+#texte1{
+  width: 80%;
+  margin: auto;
+  color: white;
+  background-color:#050d18;
+  border: solid black 2px;
+  border-radius: 0.5px;
+  box-shadow: 1px 1px 8px #555;
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+#recherche{
+  display: flex;
+  flex-direction: row;
+  height: 40%
+  display: flex;
+  align-items: center;
+}
+#recherche #search-btn{
+  border-radius: 0.5px;
+  color:white;
+  border: #181c1f solid 3px;
+  background-color: #181c1f;
+}
+#menuweb{
+  position: fixed;
+  width: 100%;
+  height: 4em;
+  background-color: #050d18;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 1px 12px #050d18;
+}
+body{
+  margin:0;
+  padding: 0;
+  background-color: #181c1f;
+}
+#appolo{
+  width: 98%;
+  height: 100%;
+}
+#blocdeblock{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#deuxiemeblock{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+h1{
+  text-align: center;
+  color:white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#article{
+  background-color: white;
+}
+#logo{
+  height: 5em;
+  width: auto;
+}
+h2{
+  text-align: center;
+}
+.block{
+  border: solid grey 2px;
+  border-radius: 0.5px;
+  box-shadow: 1px 1px 12px #555;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 18em;
+  margin-top:1em;
+}
+.imgblock{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  border-radius: 1.5px;
+
+}
+p{
+  margin-bottom:10px;
+}
+header h3:hover{
+  text-decoration: underline;
+}
+a:active,a:visited,a{
+  text-decoration: none;
+  color: white;
+}
+#deuxiemeblock{
+  border-top: solid grey 2px;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#message{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  height: 4em;
+  background-color: #181c1f;
+}
+#recherche input{
+  border-radius: 1px;
+  margin-right: 0.5em;
+}
+.block p{
+  margin: 8px;
+}
+#map,#formulaire{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+iframe{
+  width: 90%;
+  height: 15em;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+}
+#formulaire input,label{
+  margin-left: 0.2em;
+}
+#envoyer{
+  display: flex;
+  align-items: right;
+}
+#row label{
+  width: 50%;
+}
+#formulaire h2,#map h2{
+  text-align: left;
+}
+/*menumobile*/
+#menumobile{
+  display: none;
+}
+#menu a
+{
+  text-decoration: none;
+  color: white;
+
+  transition: color 0.3s ease;
+}
+
+#menu a:hover
+{
+  text-decoration: underline;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 32px;
+  left: 50px;
+  width: 18em;
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 100%;
+  margin: -100px 0 0 -50px;
+  padding-top: 125px;
+
+  background-color: #050d18;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  font-size: 22px;
+  padding-bottom: :2em;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+@media only screen and (min-device-width : 0px) and (max-device-width : 760px) {
+
+  #menuweb{
+    display: none;
+    }
+  #menumobile{
+    display: block;
+    background-color: #050d18;
+    height:5em;
+    color:white;
+  }
+  #blocdeblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    width: 100%;
+  }
+  .block{
+    width: 100%;
+    margin:0;
+    border-collapse: collapse;
+    border:none;
+  }
+  #deuxiemeblock{
+    display: flex;
+    flex-direction: column;
+  }
+  #map{
+    width: 100%;
+  }
+  #formulaire{
+    width: 100%;
+  }
+  #deuxiemeblock{
+    border-top: none;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+  }
+header{
+  display:block;
+}
+ul#menu{
+  width: 100%;
+}

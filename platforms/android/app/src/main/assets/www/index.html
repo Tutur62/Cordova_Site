@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <title>La conquête de l'espace</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <script src="cordova.js"></script>
+</head>
+<header>
+  <nav>
+    <div id="menuweb">
+      <img id="logo" src="img\logo.png">
+      <h3>Accueil</h3>
+      <a href="#texte1"><h3>La conquête de l'espace</h3></a>
+      <a href="#formulaire"><h3>Contact</h3></a>
+      <div id="recherche">
+        <input type="search" id="maRecherche" name="q">
+        <input id="search-btn" type="submit" value="Rechercher" />
+      </div>
+    </div>
+  </nav>
+  <div id="menumobile">
+    <div id="menuToggle">
+      <input type="checkbox" />
+
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="#">
+          <li>Accueil</li>
+        </a>
+        <a href="#texte1">
+          <li>La conquête de l'espace</li>
+        </a>
+        <a href="#formulaire">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+  </div>
+  <center>
+    <img id="appolo" width="80%" src="img\appolo.jpg">
+  </center>
+</header>
+
+<body>
+  <div id="texte1">
+    <h1>Introduction</h1></img>
+    <p>L’exploration de l’espace, parfois appelée conquête de l’espace consiste en l'exploration physique de l'espace, c'est-à-dire de tous les objets extérieurs à la Terre. L’exploration du système solaire en constitue la première étape, un des événements
+      majeurs de la seconde partie du XXe siècle sur le plan scientifique, mais aussi de façon plus large pour nos sociétés, par l'expansion prodigieuse de cette nouvelle frontière. Une colonisation de l'espace pourrait en effet apparaître comme l'aboutissement
+      à très long terme.</p>
+  </div>
+  <div id="article">
+    <div id="blocdeblock">
+      <div class="block">
+        <h3>Spoutnik</h3>
+        <img class="imgblock" src="img\spoutnik.jpg">
+        <p>Spoutnik est une famille de satellites lancés par l'URSS. Spoutnik 1, lancé le 4 octobre 1957, est le premier engin placé en orbite autour de la Terre et marque le début de l'ère spatiale.</p>
+      </div>
+      <div class="block">
+        <img/>
+        <h3>Premier homme sur la lune</h3>
+        <img class="imgblock" src="img\lune.jpg">
+        <p>En 1966, Armstrong effectue son premier vol spatial à bord de Gemini 8 et réalise le premier amarrage de deux engins spatiaux. Il est sélectionné comme commandant d'Apollo 11, la première mission à se poser sur la Lune le 20 juillet 1969</p>
+      </div>
+      <div class="block">
+        <img/>
+        <h3>Exploration de Mars</h3>
+        <img class="imgblock" src="img\mars.jpg">
+        <p>Mars Exploration Rover est une mission de la NASA lancée en 2003 et composée de deux robots mobiles ayant pour objectif d'étudier la géologie de la planète Mars et en particulier le rôle joué par l'eau dans l'histoire de la planète.
+        </p>
+      </div>
+      <div class="block">
+        <img/>
+        <h3>Survol de Pluton</h3>
+        <img class="imgblock" src="img\pluton.jpg">
+        <p>New Horizons (« Nouveaux Horizons » en français) est une mission de l'agence spatiale américaine (NASA) dont l'objectif principal est d'étudier la planète naine Pluton et ses satellites, grâce à une sonde spatiale qui les a survolés mi-juillet
+          2015.
+        </p>
+      </div>
+    </div>
+    <div id="deuxiemeblock">
+      <div id="map">
+        <h2>Où se trouve la Nasa:</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79247.876133949!2d-80.7062900822302!3d28.62093702641236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e0b13bf90f5513%3A0x8b6bedb3524b4121!2sShuttle+Landing+Facility!5e0!3m2!1sfr!2sfr!4v1518798443786"></iframe>
+      </div>
+      <div id="formulaire">
+        <h2>Contact :</h2>
+        <form action="/ma-page-de-traitement" method="post">
+          <div class="row">
+            <label>Prénom : </label>
+            <input type="text" id="prenom" />
+            <label>Nom : </label>
+            <input type="text" id="nom" />
+          </div>
+          <div class="row">
+            <label>Date  de Naissance : </label>
+            <input type="date" name="anniversaire">
+            <label> Ville : </label>
+            <input type="text" id="ville" />
+          </div>
+          <div class="row">
+            <label>Courriel : </label>
+            <input type="email" id="courriel" />
+          </div>
+          <div class="row">
+            <label>Photo : </label>
+            <input type="file" name="nom" />
+          </div>
+          <div id="message">
+            <label>Message : </label>
+            <textarea id="message"></textarea>
+          </div>
+          <div class="row">
+            <input type="submit" id="envoyer" value="Envoyer le formulaire">
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Le reste du contenu -->
+</body>
+<footer>
+</footer>
+
+</html>

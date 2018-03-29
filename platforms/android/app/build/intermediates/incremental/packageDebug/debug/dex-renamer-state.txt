@@ -1,0 +1,4 @@
+#Thu Mar 29 10:22:40 GMT+01:00 2018
+base.0=C\:\\Users\\thema\\hello\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+renamed.0=classes.dex
+file.0=C\:\\Users\\thema\\hello\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
